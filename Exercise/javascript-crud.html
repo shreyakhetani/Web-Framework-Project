@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let cars = [
+      {
+        id: 1,
+        name: 'Audi',
+        price: 10000
+      },
+      {
+        id: 2,
+        name: 'Volvo',
+        price: 20000
+      }
+    ];
+
+    // console.log(cars);
+    // console.log(cars[0].name);
+
+    console.log('Read one - based on id');
+    const id = 1;
+    const car = cars.find(car => car.id === id);
+    console.log(car);
+
+    console.log('Read All');
+
+    const printCars = (array) => {
+      cars.forEach(car => {
+        console.log("ID: " + car.id);
+        console.log("Name: " + car.name);
+        console, log("Price: " + car.price);
+      });
+    }
+
+    // Add new car
+
+    const addCars = (newCar) => {
+      cars.push(newCar);
+    }
+
+    addCars({ id: 3, name: 'BMW', price: 30000 });
+    console.log("New car added");
+    console.log(cars);
+
+    //Delete car
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "npm-example",
+  "version": "1.0.0",
+  "description": "npm example project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shreya Khetani",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
