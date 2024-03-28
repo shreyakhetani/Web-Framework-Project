@@ -1,0 +1,57 @@
+Atlas atlas-6o2u3g-shard-0 [primary] BookDb> use BookDB
+switched to db BookDB
+Atlas atlas-6o2u3g-shard-0 [primary] BookDB> db.books.insertMany([{title:'A Game of Thrones', author: 'George R.R. Martin', genre: 'Fantasy', price: 14.99}, {title: 'The Hobbit', author: 'J.R.R. Tolkien', genre: 'Fantasy', price: 13.50}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("66051cc47e179fe6ee869e9d"),
+    '1': ObjectId("66051cc47e179fe6ee869e9e")
+  }
+}
+Atlas atlas-6o2u3g-shard-0 [primary] BookDB> db.books.deleteOne({genre: 'Science Fiction'})
+{ acknowledged: true, deletedCount: 1 }
+Atlas atlas-6o2u3g-shard-0 [primary] BookDB> db.books.find()
+[
+  {
+    _id: ObjectId("660443c17ca40d2450aa8d2a"),
+    title: 'To Kill a Mockingbird',
+    author: 'Harper Lee',
+    genre: 'Fiction',
+    price: 13
+  },
+  {
+    _id: ObjectId("660443c17ca40d2450aa8d2c"),
+    title: 'The Great Gastsby',
+    author: 'F. Scott Fitzgerald',
+    genre: 'Romance',
+    price: 10
+  },
+  {
+    _id: ObjectId("660443c17ca40d2450aa8d2d"),
+    title: 'Pride and Prejuduce',
+    author: 'Jane Austen',
+    genre: 'Romance',
+    price: 8.99
+  },
+  {
+    _id: ObjectId("660443c17ca40d2450aa8d2e"),
+    title: "Harry Potter and the Philosopher's Stone",
+    author: 'J.K. Rowling',
+    genre: 'Fantasy',
+    price: 15.25
+  },
+  {
+    _id: ObjectId("66051cc47e179fe6ee869e9d"),
+    title: 'A Game of Thrones',
+    author: 'George R.R. Martin',
+    genre: 'Fantasy',
+    price: 14.99
+  },
+  {
+    _id: ObjectId("66051cc47e179fe6ee869e9e"),
+    title: 'The Hobbit',
+    author: 'J.R.R. Tolkien',
+    genre: 'Fantasy',
+    price: 13.5
+  }
+]

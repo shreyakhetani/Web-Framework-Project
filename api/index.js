@@ -4,7 +4,20 @@ const app = express();
 
 // Now we can get json data from the client
 app.use(express.json());
+
+// data from url param
 app.use(express.urlencoded({extended: false}));
+
+
+// Custom middleware that logs date to the console
+const logTime = (req, res, next)=>{
+  const date = new Date();
+  console.log(date);
+  next();
+}; 
+
+app.use(logTime);
+
 
 //IRL we could connect to database
 

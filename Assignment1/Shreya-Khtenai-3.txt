@@ -1,0 +1,24 @@
+Atlas atlas-6o2u3g-shard-0 [primary] BookDB> db.books.find({genre: 'Fantasy',})
+[
+  {
+    _id: ObjectId("660443c17ca40d2450aa8d2e"),
+    title: "Harry Potter and the Philosopher's Stone",
+    author: 'J.K. Rowling',
+    genre: 'Fantasy',
+    price: 15.25
+  },
+  {
+    _id: ObjectId("66051cc47e179fe6ee869e9d"),
+    title: 'A Game of Thrones',
+    author: 'George R.R. Martin',
+    genre: 'Fantasy',
+    price: 14.99
+  },
+  {
+    _id: ObjectId("66051cc47e179fe6ee869e9e"),
+    title: 'The Hobbit',
+    author: 'J.R.R. Tolkien',
+    genre: 'Fantasy',
+    price: 13.5
+  }
+]

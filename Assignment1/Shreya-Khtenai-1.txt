@@ -1,0 +1,38 @@
+Atlas atlas-6o2u3g-shard-0 [primary] BookDB> db.books.find()
+[
+  {
+    _id: ObjectId("660443c17ca40d2450aa8d2a"),
+    title: 'To Kill a Mockingbird',
+    author: 'Harper Lee',
+    genre: 'Fiction',
+    price: 13
+  },
+  {
+    _id: ObjectId("660443c17ca40d2450aa8d2b"),
+    title: '1984',
+    author: 'George orwell',
+    genre: 'Science Fiction',
+    price: 11
+  },
+  {
+    _id: ObjectId("660443c17ca40d2450aa8d2c"),
+    title: 'The Great Gastsby',
+    author: 'F. Scott Fitzgerald',
+    genre: 'Romance',
+    price: 10
+  },
+  {
+    _id: ObjectId("660443c17ca40d2450aa8d2d"),
+    title: 'Pride and Prejuduce',
+    author: 'Jane Austen',
+    genre: 'Romance',
+    price: 8.99
+  },
+  {
+    _id: ObjectId("660443c17ca40d2450aa8d2e"),
+    title: "Harry Potter and the Philosopher's Stone",
+    author: 'J.K. Rowling',
+    genre: 'Fantasy',
+    price: 15.25
+  }
+]

@@ -32,5 +32,9 @@ declare the static folder so you can use evrything in public folder
 
 APIs
 
-27/3/24
+28/3/24
+
+handlebars installation
+copy the same as above
+2. npm i express-handlebars
 

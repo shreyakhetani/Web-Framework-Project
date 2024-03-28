@@ -1,0 +1,4 @@
+Use mongoDb in Node.js
+1. In your node project terminal write npm init
+2. Install mongoDB: npm i mongodb
+3. copy the code from mongodb database and paste it in index.js
