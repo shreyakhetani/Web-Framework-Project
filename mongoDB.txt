@@ -2,3 +2,10 @@ Use mongoDb in Node.js
 1. In your node project terminal write npm init
 2. Install mongoDB: npm i mongodb
 3. copy the code from mongodb database and paste it in index.js
+
+
+npm i mongoose
+npm i dotenv
+
+Creating model and schema
+Schema describe the structure of the documnets in mongoDB.like BluePrint. Properties, data type, if the value is require.

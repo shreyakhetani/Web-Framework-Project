@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+     <h1>Create Book</h1>
+    <form method="POST" action="/create" >
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title"><br><br>
+        
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre"><br><br>
+        
+        <label for="releaseYear">Release Year:</label>
+        <input type="number" id="releaseYear" name="releaseYear"><br><br>
+        
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price"><br><br>
+
+        <label for="isAvailable">Is Available:</label><br>
+        <input type="radio" id="available" name="isAvailable" value="true" checked>
+        <label for="available">Available</label><br>
+        <input type="radio" id="unavailable" name="isAvailable" value="false">
+        <label for="unavailable">Unavailable</label><br>
+        
+        <button type="submit">Create Book</button>
+    </form>
+    </div>
+</body>
+</html>
+
+

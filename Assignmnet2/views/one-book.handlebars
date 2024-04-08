@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1>{{title}}</h1>
+    {{#if books}}
+        <div>
+            <h2>Title: {{books.title}}</h2>
+            <p>ID: {{books.id}}</p>
+            <p>Genre: {{books.genre}}</p>
+            <p>Release Year: {{books.releaseYear}}</p>
+            <p>Price: {{books.price}}</p>
+            <p>isAvailable: {{books.isAvailable}}</p>
+        </div>
+    {{else}}
+        <p>No book found with the provided ID.</p>
+    {{/if}}
+    </div>
+</body>
+</html>

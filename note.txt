@@ -38,3 +38,9 @@ handlebars installation
 copy the same as above
 2. npm i express-handlebars
 
+github repository: https://github.com/TommiHAMK/mongodb2024-2
+
+Project: https://github.com/TommiHAMK/mvc-1
+
+https://crabby-jumper-lamb.cyclic.app/
+https://crabby-jumper-lamb.cyclic.app/products/660e4d2f6198bd0f906fb14a
